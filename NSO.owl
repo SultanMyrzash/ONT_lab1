@@ -1,0 +1,716 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY webprotege "http://webprotege.stanford.edu/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY untitled-ontology-5 "http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/untitled-ontology-5/" >
+    <!ENTITY network-security-ontology2 "http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology/" >
+    <!ENTITY network-security-ontology "http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/untitled-ontology-5#"
+     xml:base="http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/untitled-ontology-5"
+     xmlns:network-security-ontology2="http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-5="http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/untitled-ontology-5/"
+     xmlns:network-security-ontology="http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology#"
+     xmlns:webprotege="http://webprotege.stanford.edu/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://webprotege.stanford.edu/R7Abpi9WABwdaxzm1zQjxJ3 -->
+
+    <owl:ObjectProperty rdf:about="&webprotege;R7Abpi9WABwdaxzm1zQjxJ3">
+        <rdfs:label>isReportedBy</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R9IQzLk6cefTt2ax68hJpzm -->
+
+    <owl:ObjectProperty rdf:about="&webprotege;R9IQzLk6cefTt2ax68hJpzm">
+        <rdfs:label>launches</rdfs:label>
+        <owl:equivalentProperty rdf:resource="&network-security-ontology2;isExecutedBy"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RB3AtL5XFbq8HllKZPqThEJ -->
+
+    <owl:ObjectProperty rdf:about="&webprotege;RB3AtL5XFbq8HllKZPqThEJ">
+        <rdfs:label>mitigates</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RCVT60cCtzZsUhSSBTlF6p2 -->
+
+    <owl:ObjectProperty rdf:about="&webprotege;RCVT60cCtzZsUhSSBTlF6p2">
+        <rdfs:label>investigates</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RD0dkP8YEYjirVvPapg9Dw4 -->
+
+    <owl:ObjectProperty rdf:about="&webprotege;RD0dkP8YEYjirVvPapg9Dw4">
+        <rdfs:label>downloads</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology/isDetectedBy -->
+
+    <owl:ObjectProperty rdf:about="&network-security-ontology2;isDetectedBy">
+        <rdfs:range rdf:resource="&network-security-ontology;Detection&amp;Prevention"/>
+        <rdfs:domain rdf:resource="&network-security-ontology2;Threats"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology/isExecutedBy -->
+
+    <owl:ObjectProperty rdf:about="&network-security-ontology2;isExecutedBy">
+        <rdfs:range rdf:resource="&network-security-ontology2;Agents"/>
+        <rdfs:domain rdf:resource="&network-security-ontology2;Threats"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology/isMitigatedBy -->
+
+    <owl:ObjectProperty rdf:about="&network-security-ontology2;isMitigatedBy">
+        <owl:inverseOf rdf:resource="&webprotege;RB3AtL5XFbq8HllKZPqThEJ"/>
+        <rdfs:range rdf:resource="&network-security-ontology;Response&amp;Mitigation"/>
+        <rdfs:domain rdf:resource="&network-security-ontology2;Threats"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology/owns -->
+
+    <owl:ObjectProperty rdf:about="&network-security-ontology2;owns">
+        <rdfs:range rdf:resource="&network-security-ontology2;Endpoints"/>
+        <rdfs:domain rdf:resource="&network-security-ontology2;System_Users"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology/targets -->
+
+    <owl:ObjectProperty rdf:about="&network-security-ontology2;targets">
+        <rdfs:range rdf:resource="&network-security-ontology2;Network_Infrastructure"/>
+        <rdfs:domain rdf:resource="&network-security-ontology2;Threats"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology#Damage_Caused -->
+
+    <owl:DatatypeProperty rdf:about="&network-security-ontology;Damage_Caused"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology#Detection_Accuracy -->
+
+    <owl:DatatypeProperty rdf:about="&network-security-ontology;Detection_Accuracy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology#Impact_Score -->
+
+    <owl:DatatypeProperty rdf:about="&network-security-ontology;Impact_Score">
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology#Threat_Level -->
+
+    <owl:DatatypeProperty rdf:about="&network-security-ontology;Threat_Level">
+        <rdfs:domain rdf:resource="&network-security-ontology2;Threats"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology#Detection&amp;Prevention -->
+
+    <owl:Class rdf:about="&network-security-ontology;Detection&amp;Prevention"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology#Response&amp;Mitigation -->
+
+    <owl:Class rdf:about="&network-security-ontology;Response&amp;Mitigation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology/Agents -->
+
+    <owl:Class rdf:about="&network-security-ontology2;Agents"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology/Anomaly-Based_Detection -->
+
+    <owl:Class rdf:about="&network-security-ontology2;Anomaly-Based_Detection">
+        <rdfs:subClassOf rdf:resource="&network-security-ontology;Detection&amp;Prevention"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology/Application-layer -->
+
+    <owl:Class rdf:about="&network-security-ontology2;Application-layer">
+        <rdfs:subClassOf rdf:resource="&network-security-ontology2;Denial_of_Service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology/Baiting -->
+
+    <owl:Class rdf:about="&network-security-ontology2;Baiting">
+        <rdfs:subClassOf rdf:resource="&network-security-ontology2;Social_Engineering"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology/Cloud_Environments -->
+
+    <owl:Class rdf:about="&network-security-ontology2;Cloud_Environments">
+        <rdfs:subClassOf rdf:resource="&network-security-ontology2;Network_Infrastructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology/Cybercriminals -->
+
+    <owl:Class rdf:about="&network-security-ontology2;Cybercriminals">
+        <rdfs:subClassOf rdf:resource="&network-security-ontology2;Agents"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology/Denial_of_Service -->
+
+    <owl:Class rdf:about="&network-security-ontology2;Denial_of_Service">
+        <rdfs:subClassOf rdf:resource="&network-security-ontology2;Threats"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology/Endpoints -->
+
+    <owl:Class rdf:about="&network-security-ontology2;Endpoints">
+        <rdfs:subClassOf rdf:resource="&network-security-ontology2;Network_Infrastructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology/Ethical_Hackers -->
+
+    <owl:Class rdf:about="&network-security-ontology2;Ethical_Hackers">
+        <rdfs:subClassOf rdf:resource="&network-security-ontology2;Agents"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology/Firewalls -->
+
+    <owl:Class rdf:about="&network-security-ontology2;Firewalls">
+        <rdfs:subClassOf rdf:resource="&network-security-ontology2;Prevention_Mechanisms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology/Honeypots -->
+
+    <owl:Class rdf:about="&network-security-ontology2;Honeypots">
+        <rdfs:subClassOf rdf:resource="&network-security-ontology2;Prevention_Mechanisms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology/Hybrid_Detection -->
+
+    <owl:Class rdf:about="&network-security-ontology2;Hybrid_Detection">
+        <rdfs:subClassOf rdf:resource="&network-security-ontology;Detection&amp;Prevention"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology/Insider_Threats -->
+
+    <owl:Class rdf:about="&network-security-ontology2;Insider_Threats">
+        <rdfs:subClassOf rdf:resource="&network-security-ontology2;Threats"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology/Intrusion_Prevention_Systems -->
+
+    <owl:Class rdf:about="&network-security-ontology2;Intrusion_Prevention_Systems">
+        <rdfs:subClassOf rdf:resource="&network-security-ontology2;Prevention_Mechanisms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology/Machine_Learning-Based -->
+
+    <owl:Class rdf:about="&network-security-ontology2;Machine_Learning-Based">
+        <rdfs:subClassOf rdf:resource="&network-security-ontology2;Anomaly-Based_Detection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology/Malware -->
+
+    <owl:Class rdf:about="&network-security-ontology2;Malware">
+        <rdfs:subClassOf rdf:resource="&network-security-ontology2;Threats"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology/Man-in-the-Middle -->
+
+    <owl:Class rdf:about="&network-security-ontology2;Man-in-the-Middle">
+        <rdfs:subClassOf rdf:resource="&network-security-ontology2;Threats"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology/Mobile_Devices -->
+
+    <owl:Class rdf:about="&network-security-ontology2;Mobile_Devices">
+        <rdfs:subClassOf rdf:resource="&network-security-ontology2;Cloud_Environments"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology/Network_Components -->
+
+    <owl:Class rdf:about="&network-security-ontology2;Network_Components">
+        <rdfs:subClassOf rdf:resource="&network-security-ontology2;Network_Infrastructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology/Network_Infrastructure -->
+
+    <owl:Class rdf:about="&network-security-ontology2;Network_Infrastructure"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology/Phishing -->
+
+    <owl:Class rdf:about="&network-security-ontology2;Phishing">
+        <rdfs:subClassOf rdf:resource="&network-security-ontology2;Social_Engineering"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology/Pretexting -->
+
+    <owl:Class rdf:about="&network-security-ontology2;Pretexting">
+        <rdfs:subClassOf rdf:resource="&network-security-ontology2;Social_Engineering"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology/Prevention_Mechanisms -->
+
+    <owl:Class rdf:about="&network-security-ontology2;Prevention_Mechanisms">
+        <rdfs:subClassOf rdf:resource="&network-security-ontology;Detection&amp;Prevention"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology/Protocol-based -->
+
+    <owl:Class rdf:about="&network-security-ontology2;Protocol-based">
+        <rdfs:subClassOf rdf:resource="&network-security-ontology2;Denial_of_Service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology/Ransomware -->
+
+    <owl:Class rdf:about="&network-security-ontology2;Ransomware">
+        <rdfs:subClassOf rdf:resource="&network-security-ontology2;Malware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology/Routers -->
+
+    <owl:Class rdf:about="&network-security-ontology2;Routers">
+        <rdfs:subClassOf rdf:resource="&network-security-ontology2;Network_Components"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology/Security_Administrators -->
+
+    <owl:Class rdf:about="&network-security-ontology2;Security_Administrators">
+        <rdfs:subClassOf rdf:resource="&network-security-ontology2;Agents"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology/Servers -->
+
+    <owl:Class rdf:about="&network-security-ontology2;Servers">
+        <rdfs:subClassOf rdf:resource="&network-security-ontology2;Cloud_Environments"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology/Signature-Based_Detection -->
+
+    <owl:Class rdf:about="&network-security-ontology2;Signature-Based_Detection">
+        <rdfs:subClassOf rdf:resource="&network-security-ontology;Detection&amp;Prevention"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology/Social_Engineering -->
+
+    <owl:Class rdf:about="&network-security-ontology2;Social_Engineering">
+        <rdfs:subClassOf rdf:resource="&network-security-ontology2;Threats"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology/Statistical-Based -->
+
+    <owl:Class rdf:about="&network-security-ontology2;Statistical-Based">
+        <rdfs:subClassOf rdf:resource="&network-security-ontology2;Anomaly-Based_Detection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology/Switches -->
+
+    <owl:Class rdf:about="&network-security-ontology2;Switches">
+        <rdfs:subClassOf rdf:resource="&network-security-ontology2;Network_Components"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology/System_Users -->
+
+    <owl:Class rdf:about="&network-security-ontology2;System_Users">
+        <rdfs:subClassOf rdf:resource="&network-security-ontology2;Agents"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology/Threats -->
+
+    <owl:Class rdf:about="&network-security-ontology2;Threats"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology/Trojan -->
+
+    <owl:Class rdf:about="&network-security-ontology2;Trojan">
+        <rdfs:subClassOf rdf:resource="&network-security-ontology2;Malware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology/Virus -->
+
+    <owl:Class rdf:about="&network-security-ontology2;Virus">
+        <rdfs:subClassOf rdf:resource="&network-security-ontology2;Malware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology/Volume-based -->
+
+    <owl:Class rdf:about="&network-security-ontology2;Volume-based">
+        <rdfs:subClassOf rdf:resource="&network-security-ontology2;Denial_of_Service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology/Web_Application_Attacks -->
+
+    <owl:Class rdf:about="&network-security-ontology2;Web_Application_Attacks">
+        <rdfs:subClassOf rdf:resource="&network-security-ontology2;Threats"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology/Workstations -->
+
+    <owl:Class rdf:about="&network-security-ontology2;Workstations">
+        <rdfs:subClassOf rdf:resource="&network-security-ontology2;Cloud_Environments"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology/Worm -->
+
+    <owl:Class rdf:about="&network-security-ontology2;Worm">
+        <rdfs:subClassOf rdf:resource="&network-security-ontology2;Malware"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology/AWSLambda -->
+
+    <owl:NamedIndividual rdf:about="&network-security-ontology2;AWSLambda">
+        <rdf:type rdf:resource="&network-security-ontology2;Cloud_Environments"/>
+        <network-security-ontology:Damage_Caused rdf:datatype="&xsd;string">Minimal</network-security-ontology:Damage_Caused>
+        <webprotege:RB3AtL5XFbq8HllKZPqThEJ rdf:resource="&network-security-ontology2;MiraiBotnet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology/Aqymaq123 -->
+
+    <owl:NamedIndividual rdf:about="&network-security-ontology2;Aqymaq123">
+        <rdf:type rdf:resource="&network-security-ontology2;System_Users"/>
+        <network-security-ontology2:owns rdf:resource="&network-security-ontology2;laptop-123"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology/CERTTeamResponse -->
+
+    <owl:NamedIndividual rdf:about="&network-security-ontology2;CERTTeamResponse">
+        <rdf:type rdf:resource="&network-security-ontology;Response&amp;Mitigation"/>
+        <webprotege:R7Abpi9WABwdaxzm1zQjxJ3 rdf:resource="&network-security-ontology2;Pentester123"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology/CloudflareBotProtection -->
+
+    <owl:NamedIndividual rdf:about="&network-security-ontology2;CloudflareBotProtection">
+        <rdf:type rdf:resource="&network-security-ontology;Response&amp;Mitigation"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&webprotege;RB3AtL5XFbq8HllKZPqThEJ"/>
+                <owl:someValuesFrom rdf:resource="&network-security-ontology2;Denial_of_Service"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology/CloudflareWAF -->
+
+    <owl:NamedIndividual rdf:about="&network-security-ontology2;CloudflareWAF">
+        <rdf:type rdf:resource="&network-security-ontology2;Firewalls"/>
+        <network-security-ontology:Detection_Accuracy rdf:datatype="&xsd;short">95</network-security-ontology:Detection_Accuracy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology/DisgruntledAdmin -->
+
+    <owl:NamedIndividual rdf:about="&network-security-ontology2;DisgruntledAdmin">
+        <rdf:type rdf:resource="&network-security-ontology2;Insider_Threats"/>
+        <network-security-ontology:Threat_Level rdf:datatype="&xsd;string">Low</network-security-ontology:Threat_Level>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology/Emotet -->
+
+    <owl:NamedIndividual rdf:about="&network-security-ontology2;Emotet">
+        <rdf:type rdf:resource="&network-security-ontology2;Trojan"/>
+        <network-security-ontology:Threat_Level rdf:datatype="&xsd;string">High</network-security-ontology:Threat_Level>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology/EvilTwin -->
+
+    <owl:NamedIndividual rdf:about="&network-security-ontology2;EvilTwin">
+        <rdf:type rdf:resource="&network-security-ontology2;Man-in-the-Middle"/>
+        <network-security-ontology:Threat_Level rdf:datatype="&xsd;string">Medium</network-security-ontology:Threat_Level>
+        <network-security-ontology2:isDetectedBy rdf:resource="&network-security-ontology2;MLIDS"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology/Log4Shell -->
+
+    <owl:NamedIndividual rdf:about="&network-security-ontology2;Log4Shell">
+        <rdf:type rdf:resource="&network-security-ontology2;Web_Application_Attacks"/>
+        <network-security-ontology2:isMitigatedBy rdf:resource="&network-security-ontology2;CloudflareWAF"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology/MLIDS -->
+
+    <owl:NamedIndividual rdf:about="&network-security-ontology2;MLIDS">
+        <rdf:type rdf:resource="&network-security-ontology2;Anomaly-Based_Detection"/>
+        <network-security-ontology:Detection_Accuracy rdf:datatype="&xsd;short">88</network-security-ontology:Detection_Accuracy>
+        <webprotege:RB3AtL5XFbq8HllKZPqThEJ rdf:resource="&network-security-ontology2;MiraiBotnet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology/MiraiBotnet -->
+
+    <owl:NamedIndividual rdf:about="&network-security-ontology2;MiraiBotnet">
+        <rdf:type rdf:resource="&network-security-ontology2;Volume-based"/>
+        <network-security-ontology:Impact_Score rdf:datatype="&xsd;integer">9</network-security-ontology:Impact_Score>
+        <network-security-ontology:Threat_Level rdf:datatype="&xsd;string">High</network-security-ontology:Threat_Level>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology/Ongbagan -->
+
+    <owl:NamedIndividual rdf:about="&network-security-ontology2;Ongbagan">
+        <rdf:type rdf:resource="&network-security-ontology2;Cybercriminals"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&webprotege;R9IQzLk6cefTt2ax68hJpzm"/>
+                <owl:someValuesFrom rdf:resource="&network-security-ontology2;Threats"/>
+            </owl:Restriction>
+        </rdf:type>
+        <webprotege:R9IQzLk6cefTt2ax68hJpzm rdf:resource="&network-security-ontology2;MiraiBotnet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology/PaloAltoNGFW -->
+
+    <owl:NamedIndividual rdf:about="&network-security-ontology2;PaloAltoNGFW">
+        <rdf:type rdf:resource="&network-security-ontology2;Firewalls"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology/Pentester123 -->
+
+    <owl:NamedIndividual rdf:about="&network-security-ontology2;Pentester123">
+        <rdf:type rdf:resource="&network-security-ontology2;Ethical_Hackers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology/SIEMAlert -->
+
+    <owl:NamedIndividual rdf:about="&network-security-ontology2;SIEMAlert">
+        <rdf:type rdf:resource="&network-security-ontology;Response&amp;Mitigation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology/SnortSignatureDB -->
+
+    <owl:NamedIndividual rdf:about="&network-security-ontology2;SnortSignatureDB">
+        <rdf:type rdf:resource="&network-security-ontology2;Signature-Based_Detection"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology/Sultan -->
+
+    <owl:NamedIndividual rdf:about="&network-security-ontology2;Sultan">
+        <rdf:type rdf:resource="&network-security-ontology2;Security_Administrators"/>
+        <webprotege:RCVT60cCtzZsUhSSBTlF6p2 rdf:resource="&network-security-ontology2;EvilTwin"/>
+        <webprotege:RB3AtL5XFbq8HllKZPqThEJ rdf:resource="&network-security-ontology2;MiraiBotnet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology/WannaCry -->
+
+    <owl:NamedIndividual rdf:about="&network-security-ontology2;WannaCry">
+        <rdf:type rdf:resource="&network-security-ontology2;Ransomware"/>
+        <network-security-ontology2:isDetectedBy rdf:resource="&network-security-ontology2;SnortSignatureDB"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology/laptop-123 -->
+
+    <owl:NamedIndividual rdf:about="&network-security-ontology2;laptop-123">
+        <rdf:type rdf:resource="&network-security-ontology2;Endpoints"/>
+        <network-security-ontology:Impact_Score rdf:datatype="&xsd;int">8</network-security-ontology:Impact_Score>
+        <network-security-ontology:Damage_Caused rdf:datatype="&xsd;string">Severe</network-security-ontology:Damage_Caused>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sultanmyrzash/ontologies/2025/1/network-security-ontology/tplink123router -->
+
+    <owl:NamedIndividual rdf:about="&network-security-ontology2;tplink123router">
+        <rdf:type rdf:resource="&network-security-ontology2;Routers"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
